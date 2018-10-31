@@ -1,6 +1,6 @@
 /* Copyleft 2018 The design-patterns Authors. All Rights Reserved.
 
-�Ž�ģʽ
+ 桥接模式
 
 @Author: fetaxyu
 @Date: 2018-10-29

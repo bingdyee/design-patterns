@@ -1,6 +1,6 @@
 /* Copyleft 2018 The design-patterns Authors. All Rights Reserved.
 
-模板方法
+ 妯℃澘鏂规硶
 
 @Author: fetaxyu
 @Date: 2018-10-29

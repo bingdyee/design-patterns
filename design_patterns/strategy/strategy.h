@@ -1,6 +1,6 @@
 /* Copyleft 2018 The design-patterns Authors. All Rights Reserved.
 
-²ßÂÔÄ£Ê½
+ ç­–ç•¥æ¨¡å¼
 
 @Author: fetaxyu
 @Date: 2018-10-29

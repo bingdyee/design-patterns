@@ -1,6 +1,6 @@
 /* Copyleft 2018 The design-patterns Authors. All Rights Reserved.
 
-װ��ģʽ
+ 装饰模式
 
 @Author: fetaxyu
 @Date: 2018-10-30
