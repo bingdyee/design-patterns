@@ -6,18 +6,12 @@ Email: fetaxyu@gmail.com
 ===============================================================*/
 #include <iostream>
 
-#include "design_patterns/bridge/bridge.h"
+#include "design_patterns/factory_method/abs_factory.h"
 
 using namespace designs;
 
 int main(int argc, char* argv[]) {
-	Implementor* impl = new ImplementorA();
-	Abstraction* abs = new RefinedAbstraction(impl);
-	abs->Operation();
-
-	Implementor* imp = new ImplementorB();
-	Abstraction* abs1 = new RefinedAbstraction(imp);
-	abs1->Operation();
+	
 
 	getchar();
 
