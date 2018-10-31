@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+/x64/Debug
+/design-patterns.vcxproj.user
+/design-patterns.vcxproj.filters
+/design-patterns.vcxproj
