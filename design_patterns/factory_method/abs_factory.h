@@ -12,17 +12,17 @@ Email: fetaxyu@gmail.com
 
 namespace designs {
 
+class IDBConnection {
+public:
+	virtual ~IDBConnection() {}
+};
+
 class IDBDriver {
 public:
 	virtual ~IDBDriver() {}
 
 	virtual void SetConnection(IDBConnection* conn) = 0;
 
-};
-
-class IDBConnection {
-public:
-	virtual ~IDBConnection() {}
 };
 
 class MySQLDriver : public IDBDriver {

@@ -30,4 +30,5 @@ IDBConnection * OracleFactory::CreateConnection() {
 	return new OracleConnection();
 }
 
+
 }
