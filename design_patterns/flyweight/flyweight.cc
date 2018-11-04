@@ -28,7 +28,6 @@ FlyWeight * FlyWeightFactory::GetFlyWeight(const std::string & key) {
 		objectPool[key] = fw;
 		return fw;
 	}
-	return nullptr;
 }
 
 }
