@@ -1,4 +1,4 @@
-/* Copyleft 2018 The design-patterns Authors. All Rights Reserved.
+/* Copyleft 2018 The design-patterns Authors. Some Rights Reserved.
 
 @Author: fetaxyu
 @Date: 2018-10-29

@@ -1,4 +1,4 @@
-/* Copyleft 2018 The design-patterns Authors. All Rights Reserved.
+/* Copyleft 2018 The design-patterns Authors. Some Rights Reserved.
 
 外观(门面)模式：
 	外观模式定义了一个高层的功能，为子系统中的多个模块协同的完成某种功能需

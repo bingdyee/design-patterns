@@ -1,4 +1,4 @@
-/* Copyleft 2018 The design-patterns Authors. All Rights Reserved.
+/* Copyleft 2018 The design-patterns Authors. Some Rights Reserved.
 
 外观(门面)模式
 

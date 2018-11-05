@@ -1,4 +1,4 @@
-/* Copyleft 2018 The design-patterns Authors. All Rights Reserved.
+/* Copyleft 2018 The design-patterns Authors. Some Rights Reserved.
 
 代理模式
 （copy-on-write实现对单个对象的细粒度的控制）

@@ -1,4 +1,4 @@
-/* Copyleft 2018 The design-patterns Authors. All Rights Reserved.
+/* Copyleft 2018 The design-patterns Authors. Some Rights Reserved.
 
 原型模式（深拷贝）
 
