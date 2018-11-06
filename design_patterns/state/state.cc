@@ -1,6 +1,6 @@
 /* Copyleft 2018 The design-patterns Authors. Some Rights Reserved.
 
-״̬ģʽ
+状态模式
 
 @Author: fetaxyu
 @Date: 2018-10-29
