@@ -1,18 +1,14 @@
 /* Copyleft 2018 The design-patterns Authors. Some Rights Reserved.
 
+迭代器
+
 @Author: fetaxyu
-@Date: 2018-10-29
+@Date: 2018-11-07
 Email: fetaxyu@gmail.com
 ===============================================================*/
-#include <iostream>
 
-#include "design_patterns/command/command.h"
+#include "design_patterns/iterator/_iterator.h"
 
-using namespace designs;
-
-int main(int argc, char* argv[]) {
-	CommandTest();
-
-	getchar();
+namespace designs {
 
 }
