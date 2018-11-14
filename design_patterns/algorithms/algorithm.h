@@ -9,7 +9,7 @@ Email: fetaxyu@gmail.com
 
 #include <vector>
 
-namespace designs {
+namespace solution {
 
 	struct ListNode {
 		int val;

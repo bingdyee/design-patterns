@@ -8,7 +8,7 @@ Email: fetaxyu@gmail.com
 
 #include "design_patterns/algorithms/algorithm.h"
 
-using namespace designs;
+using namespace solution;
 
 int main(int argc, char* argv[]) {
 	ListNode node1(67);
@@ -18,9 +18,7 @@ int main(int argc, char* argv[]) {
 	node1.next = &node2;
 	node2.next = &node3;
 	node3.next = &node4;
-	std::cout << "{67, 0, 24, 58}" << std::endl;
 	PrintListFromTailToHead(&node1);
-
 
 	getchar();
 

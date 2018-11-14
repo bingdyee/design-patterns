@@ -9,7 +9,7 @@ Email: fetaxyu@gmail.com
 #include "design_patterns/algorithms/algorithm.h"
 
 
-namespace designs {
+namespace solution {
 
 bool Find(int target, std::vector<std::vector<int>> array) {
 	bool found = false;
