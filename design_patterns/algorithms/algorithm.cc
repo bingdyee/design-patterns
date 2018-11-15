@@ -78,4 +78,29 @@ std::vector<int> PrintListFromTailToHead(ListNode * head) {
 	return  rs;
 }
 
+TreeNode* ReConstructBinaryTree(std::vector<int> pre, std::vector<int> vin) {
+	if (pre.empty() || vin.empty()) { return NULL; }
+	int rootValue = pre.at(0);
+	int index = 0;
+	for (int e : vin) {
+		if (e == rootValue) {
+			break;
+		}
+		++index;
+	}
+	std::vector<int> leftPre, leftVin, rightPre, rightVin;
+	for (int i = 0; i < index; ++i) {
+		leftPre.push_back(pre[i + 1]);
+		leftVin.push_back(vin[i]);
+	}
+	for (int i = index + 1; i < vin.size(); ++i) {
+		rightPre.push_back(pre[i]);
+		rightVin.push_back(vin[i]);
+	}
+	TreeNode* node = new TreeNode(rootValue);
+	node->left = ReConstructBinaryTree(leftPre, leftVin);
+	node->right = ReConstructBinaryTree(rightPre, rightVin);
+	return node;
+}
+
 }

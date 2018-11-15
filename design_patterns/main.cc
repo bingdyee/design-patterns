@@ -11,14 +11,9 @@ Email: fetaxyu@gmail.com
 using namespace solution;
 
 int main(int argc, char* argv[]) {
-	ListNode node1(67);
-	ListNode node2(0);
-	ListNode node3(24);
-	ListNode node4(58);
-	node1.next = &node2;
-	node2.next = &node3;
-	node3.next = &node4;
-	PrintListFromTailToHead(&node1);
+	std::vector<int> pre = { 1, 2, 4, 7, 3, 5, 6, 8 };
+	std::vector<int> vin = { 4, 7, 2, 1, 5, 3, 8, 6 };
+	TreeNode* tree = ReConstructBinaryTree(pre, vin);
 
 	getchar();
 
