@@ -103,4 +103,53 @@ TreeNode* ReConstructBinaryTree(std::vector<int> pre, std::vector<int> vin) {
 	return node;
 }
 
+void CQueue::push(int node) {
+	stack1.push(node);
+}
+
+int CQueue::pop() {
+	if (stack2.empty()) {
+		while (stack1.size() > 0) {
+			int n = stack1.top();
+			stack1.pop();
+			stack2.push(n);
+		}
+	}
+	if (stack2.empty()) {
+		throw new std::runtime_error("Queue is empty!");
+	}
+	int n = stack2.top();
+	stack2.pop();
+	return n;
+}
+
+void CStack::push(int node) {
+	if (!queue1.empty()) {
+		queue1.push(node);
+	} else {
+		queue2.push(node);
+	}
+}
+
+int CStack::swap(std::queue<int>& q1, std::queue<int>& q2) {
+	while (q1.size() > 1) {
+		int n = q1.front();
+		q1.pop();
+		q2.push(n);
+	}
+	int n = q1.front();
+	q1.pop();
+	return n;
+}
+
+int CStack::pop() {
+	if (!queue1.empty()) {
+		return swap(queue1, queue2);
+	}
+	if (!queue2.empty()) {
+		return swap(queue2, queue1);
+	}
+	throw new std::runtime_error("Stack is empty!");
+}
+
 }

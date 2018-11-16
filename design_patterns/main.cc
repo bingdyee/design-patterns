@@ -11,10 +11,16 @@ Email: fetaxyu@gmail.com
 using namespace solution;
 
 int main(int argc, char* argv[]) {
-	std::vector<int> pre = { 1, 2, 4, 7, 3, 5, 6, 8 };
-	std::vector<int> vin = { 4, 7, 2, 1, 5, 3, 8, 6 };
-	TreeNode* tree = ReConstructBinaryTree(pre, vin);
-
+	CStack s;
+	s.push(1);
+	s.push(2);
+	s.push(3);
+	s.push(4);
+	std::cout << s.pop() << std::endl;
+	std::cout << s.pop() << std::endl;
+	std::cout << s.pop() << std::endl;
+	std::cout << s.pop() << std::endl;
+	std::cout << s.pop() << std::endl;
 	getchar();
 
 }
