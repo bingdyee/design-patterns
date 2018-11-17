@@ -152,4 +152,26 @@ int CStack::pop() {
 	throw new std::runtime_error("Stack is empty!");
 }
 
+int MinNumberInRotateArray(std::vector<int> arr) {
+	if (arr.empty()) {
+		return 0;
+	}
+	int index1 = 0;
+	int index2 = arr.size() - 1;
+	int indexMid = index1;
+	while (arr[index1] >= arr[index2]) {
+		if (index2 - index1 == 1) {
+			indexMid = index2;
+			break;
+		}
+		indexMid = (index1 + index2) / 2;
+		if (arr[indexMid] >= arr[index1]) {
+			index1 = indexMid;
+		} else if (arr[indexMid] <= arr[index2]) {
+			index2 = indexMid;
+		}
+	}
+	return arr[indexMid];
+}
+
 }
