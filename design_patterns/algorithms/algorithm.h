@@ -76,6 +76,11 @@ private:
 // NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。
 int MinNumberInRotateArray(std::vector<int>);
 
+// 大家都知道斐波那契数列，现在要求输入一个整数n，
+// 请你输出斐波那契数列的第n项（从0开始，第0项为0）。
+// n <= 39
+int Fibonacci(int n);
+
 }
 
 #endif

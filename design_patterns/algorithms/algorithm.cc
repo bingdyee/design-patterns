@@ -174,4 +174,25 @@ int MinNumberInRotateArray(std::vector<int> arr) {
 	return arr[indexMid];
 }
 
+int Fibonacci(int n) {
+	if (n > 39) {
+		throw new std::runtime_error("n <= 39!");
+	}
+	if (n == 0) {
+		return 0;
+	}
+	if (n == 1) {
+		return 1;
+	}
+	int i = 2;
+	int n1 = 0, n2 = 1;
+	while (i <= n) {
+		int n3 = n1 + n2;
+		n1 = n2;
+		n2 = n3;
+		++i;
+	}
+	return n2;
+}
+
 }

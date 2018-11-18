@@ -10,17 +10,10 @@ Email: fetaxyu@gmail.com
 
 using namespace solution;
 
+
 int main(int argc, char* argv[]) {
-	CStack s;
-	s.push(1);
-	s.push(2);
-	s.push(3);
-	s.push(4);
-	std::cout << s.pop() << std::endl;
-	std::cout << s.pop() << std::endl;
-	std::cout << s.pop() << std::endl;
-	std::cout << s.pop() << std::endl;
-	std::cout << s.pop() << std::endl;
+	std::cout << Fibonacci(10) << std::endl;
+
 	getchar();
 
 }
