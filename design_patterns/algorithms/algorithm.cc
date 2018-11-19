@@ -195,4 +195,22 @@ int Fibonacci(int n) {
 	return n2;
 }
 
+int JumpFloor(int n) {
+	if (n < 0) {
+		throw new std::runtime_error("n >= 0!");
+	}
+	int arr[2] = { 1, 2 };
+	if (n < 2) {
+		return arr[n-1];
+	}
+	int i = 2;
+	while (i < n) {
+		int count = arr[1] + arr[0];
+		arr[0] = arr[1];
+		arr[1] = count;
+		++i;
+	}
+	return arr[1];
+}
+
 }

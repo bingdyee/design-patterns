@@ -12,7 +12,7 @@ using namespace solution;
 
 
 int main(int argc, char* argv[]) {
-	std::cout << Fibonacci(10) << std::endl;
+	std::cout << JumpFloor(5) << std::endl;
 
 	getchar();
 
