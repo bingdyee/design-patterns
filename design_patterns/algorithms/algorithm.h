@@ -85,6 +85,12 @@ int Fibonacci(int);
 // 求该青蛙跳上一个n级的台阶总共有多少种跳法（先后次序不同算不同的结果）。
 int JumpFloor(int);
 
+// 输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。
+int  NumberOf1(int);
+
+// 给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。
+double Power(double, int);
+
 }
 
 #endif

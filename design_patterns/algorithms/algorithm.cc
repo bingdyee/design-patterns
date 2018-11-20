@@ -213,4 +213,37 @@ int JumpFloor(int n) {
 	return arr[1];
 }
 
+int NumberOf1(int n) {
+	int count = 0;
+	while (n) {
+		++count;
+		n = (n - 1) & n;
+	}
+	return count;
+}
+
+double Power(double base, int exponent) {
+
+	if (exponent == 0) {
+		return 1;
+	}
+	if (exponent == 1) {
+		return base;
+	}
+	if (exponent == -1) {
+		return 1 / base;
+	}
+	double rs = base;
+	int n = exponent > 0 ? exponent : -exponent;
+	while (n > 1) {
+		rs *= rs;
+		if (n & 0x01 == 1) {
+			rs *= base;
+		}
+		n = n >> 1;
+
+	}
+	return exponent > 0 ? rs : 1 / rs;
+}
+
 }

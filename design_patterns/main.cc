@@ -12,7 +12,7 @@ using namespace solution;
 
 
 int main(int argc, char* argv[]) {
-	std::cout << JumpFloor(5) << std::endl;
+	std::cout <<Power(2.0, -3) << std::endl;
 
 	getchar();
 
