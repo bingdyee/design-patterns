@@ -12,7 +12,7 @@ using namespace solution;
 
 
 int main(int argc, char* argv[]) {
-	std::cout <<Power(2.0, -3) << std::endl;
+	std::cout <<RectCover(5) << std::endl;
 
 	getchar();
 

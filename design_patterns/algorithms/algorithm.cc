@@ -199,6 +199,7 @@ int JumpFloor(int n) {
 	if (n < 0) {
 		throw new std::runtime_error("n >= 0!");
 	}
+	if (n == 0) return 0;
 	int arr[2] = { 1, 2 };
 	if (n < 2) {
 		return arr[n-1];
@@ -211,6 +212,13 @@ int JumpFloor(int n) {
 		++i;
 	}
 	return arr[1];
+}
+
+int JumpFloorII(int n) {
+	if (n <= 0) {
+		throw new std::runtime_error("n > 0!");
+	}
+	return n == 1 ? 1 : 2 * JumpFloorII(n - 1);
 }
 
 int NumberOf1(int n) {
@@ -244,6 +252,10 @@ double Power(double base, int exponent) {
 
 	}
 	return exponent > 0 ? rs : 1 / rs;
+}
+
+int RectCover(int number) {
+	return JumpFloor(number);
 }
 
 }
