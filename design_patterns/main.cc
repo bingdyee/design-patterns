@@ -12,7 +12,13 @@ using namespace solution;
 
 
 int main(int argc, char* argv[]) {
-	std::cout <<RectCover(5) << std::endl;
+	std::vector<int> array = {1, 3, 4, 6, 2, 7, 8, 9};
+
+	ReOrderArray(array);
+
+	for (int i : array) {
+		std::cout << i << ",";
+	}
 
 	getchar();
 

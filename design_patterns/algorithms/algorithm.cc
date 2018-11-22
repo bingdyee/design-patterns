@@ -258,4 +258,28 @@ int RectCover(int number) {
 	return JumpFloor(number);
 }
 
+void ReOrderArray(std::vector<int>& array) {
+	int index = -1, count = 0, i = 0;
+	while (i < array.size()) {
+		if (array[i] & 0x1) {
+			if (index > 0) {
+				for (int j = 1; j <= count; ++j) {
+					int temp = array[i];
+					array[i] = array[i - 1];
+					array[i - 1] = temp;
+					i = i - 1;
+				}
+				count = 0;
+				index = -1;
+			} else {
+				++i;
+			}
+		} else {
+			index = index > 0 ? index : i;
+			++count;
+			++i;
+		}
+	}
+}
+
 }
